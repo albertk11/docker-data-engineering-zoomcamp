@@ -222,3 +222,32 @@ __marimo__/
 .csv
 .parquet
 .csv.gz
+
+# Credenziali locali
+*credentials*.json
+*service-account*.json
+keys/
+
+# Docker Compose: override locali (i file compose e Dockerfile restano versionati)
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# Terraform: cache, state e file generati localmente
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Terraform: variabili che possono contenere dati sensibili
+*.json
+*.tfvars
+*.tfvars.json
